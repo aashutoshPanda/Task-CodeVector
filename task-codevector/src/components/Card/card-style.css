@@ -1,0 +1,68 @@
+body{
+	background:  radial-gradient(#e5e5e5,#fff,#e5e5e5);
+}
+
+.card{
+	width: 20rem;
+
+}
+
+.card:hover{
+	box-shadow:5px 10px 20px 1px rgba(0,0,0,0.253)!important;
+}
+
+
+
+.card-text{
+	font-size: 0.9rem;
+	
+}
+
+.container-fluid .row{
+	padding-top: 6rem;
+}
+
+
+
+.card-img-top{
+	transform: scale(0.7);
+	transition: all 0.5s  ;
+	margin-bottom: -25%;
+	margin-top: -12%;
+}
+
+.card-img-top:hover{
+	transform: scale(1);
+	
+}
+
+.overflow{
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
