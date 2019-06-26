@@ -2,8 +2,10 @@
   "name": "task-codevector",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://aashutoshPanda.github.io/Task-CodeVector/",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -12,6 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "react-scripts eject",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -16,6 +16,11 @@
 
 .toolbar__logo {
   margin-left: 1rem;
+  
+}
+.toolbar__logo a:hover{
+  text-decoration: none;
+  color:#00bfa5;
 }
 
 .toolbar__logo a {
@@ -79,6 +84,7 @@
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
   color: #00bfa5;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

@@ -31,12 +31,18 @@
 .side-drawer a {
   color: #521751;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size:1.5em ;
 }
 
 .side-drawer a:hover,
 .side-drawer a:active {
-  color: #fa923f;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size:1.5em ;
+   color: #00bfa5;
+  text-decoration: none;
 }
 
 @media (min-width: 769px) {
