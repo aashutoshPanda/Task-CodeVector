@@ -4,7 +4,7 @@ import React, { Component } from 'react';
     export default class Carousel extends Component {
       render() {
         const params = {
-          activeSlideKey:"2",
+          activeSlideKey:"3",
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
@@ -26,10 +26,10 @@ import React, { Component } from 'react';
       },
       breakpoints: {
         1024: {
-          slidesPerView: 4,
-          spaceBetween: 40
-        },
+          slidesPerView: 3,
+          spaceBetween: 40,
         768: {
+        },
           slidesPerView: 3,
           spaceBetween: 30
         },
@@ -46,11 +46,13 @@ import React, { Component } from 'react';
 
         return (
           <Swiper {...params}>
-            <div key='0' style={{height:"350px", width:"300px",backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
-            <div  key='1' style={{height:"350px", width:"300px",backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
-            <div  key='2' style={{height:"350px", width:"300px",backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
-            <div  key='3' style={{height:"350px", width:"300px",backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
-            <div  key='4' style={{height:"350px", width:"300px",backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
+            <div key='0' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/43467.com" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
+            <div  key='1' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/35624.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
+            <div  key='2' style={{height:"300px", width:"250px",backgroundImage: "url(" +  "https://static.episodate.com/images/tv-show/thumbnail/23455.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
+            <div  key='3' style={{height:"300px", width:"250px",backgroundImage: "url(" +  "https://static.episodate.com/images/tv-show/thumbnail/29560.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
+            <div  key='4' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/43234.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
+            <div  key='4' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/43234.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
+            <div  key='4' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/43234.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}>Slide 1</div>
             
 
           </Swiper>

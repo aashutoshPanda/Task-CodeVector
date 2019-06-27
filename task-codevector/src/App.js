@@ -30,11 +30,16 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
-      <div style={{height: '100%'}}>
+      <div >
+      <nav>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
+      </nav>
         <main style={{marginTop: '64px'}}>
+          <div className="top-shows-heading">
+              <h2 >POPULAR SHOWS</h2>
+          </div>          
           <Carousel/>
           <Card title="GOT" img_url={img_url_demo} para="lorem ipsum" />
         </main>
