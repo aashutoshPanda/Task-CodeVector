@@ -41,7 +41,17 @@ class App extends Component {
               <h2 >POPULAR SHOWS</h2>
           </div>          
           <Carousel/>
-          <Card title="GOT" img_url={img_url_demo} para="lorem ipsum" />
+          <div className="top-shows-heading">
+              <h2 >TOP PICKS FOR YOU</h2>
+          </div>
+          <div className="gradient-wrapper" >
+            <div className="show-container">
+              <Card title="GOT" img_url={img_url_demo} para="lorem ipsum" />
+              <Card title="GOT" img_url={img_url_demo} para="lorem ipsum" />
+              <Card title="GOT" img_url={img_url_demo} para="lorem ipsum" />
+              <Card title="GOT" img_url={img_url_demo} para="lorem ipsum" />
+            </div>
+          </div>
         </main>
         
       </div>
