@@ -2,13 +2,15 @@
   "name": "task-codevector",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://aashutoshPanda.github.io/Task-CodeVector/",
+  "homepage": "https://aashutoshPanda.github.io/Task-CodeVector/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-id-swiper": "^2.3.1",
+    "react-scripts": "3.0.1",
+    "swiper": "^4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
