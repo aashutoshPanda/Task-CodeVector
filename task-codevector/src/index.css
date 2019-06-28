@@ -12,7 +12,14 @@ body {
 
 
 }
+#root{ 
+  background: url('./bg-img.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
+}
 .swiper-container{
   padding: 20px;
 
@@ -31,13 +38,13 @@ body {
 	margin-top: 40px;
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
-  color: #004d40;
+  color: white;
 }
 .gradient-wrapper{
   width: 80%;
   padding: 5px;
   margin:auto; 
-  background: linear-gradient(to right, #004d40, #80cbc4);
+  background: linear-gradient(to right, black, #d50000);
   border-radius: 30px;
   
 }

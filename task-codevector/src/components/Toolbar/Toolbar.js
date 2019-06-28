@@ -62,6 +62,7 @@ class toolbar extends Component {
             />
 
           </div>
+          
         </nav>
       </header>
     );
