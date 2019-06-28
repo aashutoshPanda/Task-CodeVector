@@ -6,11 +6,16 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.14.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-fontawesome": "^1.6.1",
     "react-id-swiper": "^2.3.1",
     "react-scripts": "3.0.1",
-    "swiper": "^4.5.0"
+    "reactjs-dropdown-component": "^1.0.6",
+    "swiper": "^4.5.0",
+    "typescript": "^3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",

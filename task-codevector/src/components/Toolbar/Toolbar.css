@@ -17,6 +17,7 @@
 
 .toolbar__logo {
   margin-left: 1rem;
+
   
 }
 .toolbar__logo a:hover{
@@ -27,7 +28,7 @@
 .toolbar__logo a {
   color: white;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: 'Permanent Marker', cursive;
   font-weight: 550;
 }
@@ -43,12 +44,19 @@
   border-radius: 30px;
   width: 300px;
   transition: all 1s ;
+  height: 30px;
+  color: #49958B;
+  font-family: 'Roboto', sans-serif;
 }
 
 .search-input::placeholder ,.search-input[type=text]{
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-family: Lato;
   text-indent: 15px;
+   height: 30px;
+   font-weight: 700px;
+   font-family: 'Roboto', sans-serif;
+  
 }
 .search-input:focus{
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
@@ -59,6 +67,11 @@
   border: 1px solid #DDDDDD;
   border-radius: 12px;
   width: 300px;
+   height: 30px;
+   font-size: 1.5rem;
+  font-weight: 700px;
+  color: #004d40;
+  font-family: 'Roboto', sans-serif;
 }
 .spacer {
   flex: 1;

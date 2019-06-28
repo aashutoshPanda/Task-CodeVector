@@ -1,7 +1,6 @@
 html {
   height: 100%;
 
-
 }
 
 body {
@@ -10,12 +9,11 @@ body {
   font-family: sans-serif;
   height: 100%;
 
-
 }
+
 
 .swiper-container{
   padding: 20px;
-
 }
 .swiper-pagination {
     position: relative;
@@ -28,7 +26,7 @@ body {
 }
 
 .top-shows-heading h2 {
-	margin-top: 40px;
+	margin-top: 30px;
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
   color: #004d40;
