@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Task-CodeVector/static/css/main.6a032c06.chunk.css",
+    "main.js": "/Task-CodeVector/static/js/main.6dde0dbc.chunk.js",
+    "main.js.map": "/Task-CodeVector/static/js/main.6dde0dbc.chunk.js.map",
+    "runtime~main.js": "/Task-CodeVector/static/js/runtime~main.8c8901bb.js",
+    "runtime~main.js.map": "/Task-CodeVector/static/js/runtime~main.8c8901bb.js.map",
+    "static/css/2.0624914a.chunk.css": "/Task-CodeVector/static/css/2.0624914a.chunk.css",
+    "static/js/2.488500ad.chunk.js": "/Task-CodeVector/static/js/2.488500ad.chunk.js",
+    "static/js/2.488500ad.chunk.js.map": "/Task-CodeVector/static/js/2.488500ad.chunk.js.map",
+    "index.html": "/Task-CodeVector/index.html",
+    "precache-manifest.1574146b34aae69bc78f1bcdf9d80bfd.js": "/Task-CodeVector/precache-manifest.1574146b34aae69bc78f1bcdf9d80bfd.js",
+    "service-worker.js": "/Task-CodeVector/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/Task-CodeVector/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.6a032c06.chunk.css.map": "/Task-CodeVector/static/css/main.6a032c06.chunk.css.map"
+  }
+}
