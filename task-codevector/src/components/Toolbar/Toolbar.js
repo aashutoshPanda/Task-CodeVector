@@ -10,7 +10,7 @@ class toolbar extends Component {
     super();
     this.state = {
       location: data_dropDown.location,
-      network: data_dropDown.network,
+      network: data_dropDown.network
     };
   }
 
@@ -45,24 +45,22 @@ class toolbar extends Component {
             type="text"
             className="search-input"
             placeholder="Search Now !"
+            onKeyUp={this.props.search_fun}
           />
           <div className="spacer" />
           <div className="toolbar_navigation-items"></div>
           <div className="wrapper">
-          
             <Dropdown
               title="Select Network"
               list={this.state.network}
               resetThenSet={this.resetThenSet}
-            />            
+            />
             <Dropdown
               title="Select Country"
               list={this.state.location}
               resetThenSet={this.resetThenSet}
             />
-
           </div>
-          
         </nav>
       </header>
     );

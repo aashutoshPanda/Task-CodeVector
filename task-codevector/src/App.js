@@ -10,7 +10,10 @@ const img_url_demo =
   "https://static.episodate.com/images/tv-show/thumbnail/23455.jpg";
 class App extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
+    query: "",
+    filtered_array: [],
+    style_for_carousel: {}
   };
 
   drawerToggleClickHandler = () => {
@@ -23,42 +26,110 @@ class App extends Component {
     this.setState({ sideDrawerOpen: false });
   };
 
+  searchText = event => {
+    this.setState({
+      query: event.target.value
+    });
+  };
+
+  componentWillMount() {
+    this.fetchData();
+  }
+
+  fetchData() {
+    this.setState({
+      isLoading: true,
+      tv_shows: []
+    });
+
+    fetch("https://www.episodate.com/api/most-popular?page=1")
+      .then(response => response.json())
+      .then(parsedJSON =>
+        parsedJSON.tv_shows.map(tv_show => ({
+          name: `${tv_show.name}`,
+          id: `${tv_show.id}`,
+          image_thumbnail_path: `${tv_show.image_thumbnail_path}`
+        }))
+      )
+      .then(tv_shows =>
+        this.setState({
+          tv_shows,
+          isLoading: false
+        })
+      )
+      .catch(error => console.log("parsing failed", error));
+  }
+
   render() {
+    if (this.state.query == "") {
+      this.state.style_for_carousel = { display: "block" };
+    } else {
+      this.state.style_for_carousel = { display: "none" };
+    }
     let backdrop;
+    this.state.filtered_array = this.state.tv_shows.filter(show => {
+      return (
+        show.name.toLowerCase().indexOf(this.state.query.toLowerCase()) != -1
+      );
+    });
 
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
+
     return (
       <div>
         <nav>
-          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+          <Toolbar
+            drawerClickHandler={this.drawerToggleClickHandler}
+            search_fun={this.searchText}
+          />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
         </nav>
         <main style={{ marginTop: "64px" }}>
-          <div className="top-shows-heading">
-            <h2>POPULAR SHOWS</h2>
+          <div
+            className="carousel-container"
+            style={this.state.style_for_carousel}
+          >
+            <div className="top-shows-heading">
+              <h2>POPULAR SHOWS</h2>
+            </div>
+            <Carousel />
           </div>
-          <Carousel />
+
           <div className="top-shows-heading">
-            <h2>TOP PICKS FOR YOU</h2>
+            <h2>
+              {this.state.query == ""
+                ? "TOP PICKS FOR YOU"
+                : " HERE'S WHAT WE GOT FOR YOU"}
+            </h2>
           </div>
           <div className="gradient-wrapper">
-            <div className="show-container">
-              <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/46692.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/46692.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/24010.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/47145." para="lorem ipsum" />
-              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/47145." para="lorem ipsum" />
-              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/47145." para="lorem ipsum" />
-              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/46778.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/8362.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/8362.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/22410.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/31452.jpg" para="lorem ipsum" />
-              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/31452.jpg" para="lorem ipsum" />
-            </div>
+            {this.state.filtered_array.length == 0 ? (
+              <div
+                className="show-container"
+                style={{
+                  backgroundImage:
+                    'url("https://cdn.dribbble.com/users/2382015/screenshots/6065978/no_result.gif")',
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat"
+                }}
+              ></div>
+            ) : (
+              <div className="show-container">
+                {this.state.filtered_array.map(tv_show => {
+                  return (
+                    <Card
+                      title={tv_show.name}
+                      img_url={tv_show.image_thumbnail_path}
+                      id={tv_show.id}
+                    />
+                  );
+                })}
+              </div>
+            )}
           </div>
         </main>
       </div>

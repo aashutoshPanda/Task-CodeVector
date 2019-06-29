@@ -41,6 +41,7 @@ body {
   color: white;
   z-index: 100;
   transition: all 0.4s;
+
 }
 .top-shows-heading h2:hover {
   margin-top: 40px;
@@ -69,7 +70,11 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;   /* elements wil be arranged in rows and columns just put proper margin between them*/
+  min-height: 700px;
   
+}
+.card{
+  max-height: 300px !important;
 }
 
 @media screen and (max-width: 480px) {

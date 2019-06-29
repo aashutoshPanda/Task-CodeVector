@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-    import Swiper from 'react-id-swiper';
-    const img_url_demo = "https:\/\/static.episodate.com\/images\/tv-show\/thumbnail\/23455.jpg";
-    export default class Carousel extends Component {
-      render() {
-        const params = {
-          activeSlideKey:"3",
-      effect: 'coverflow',
+import React, { Component } from "react";
+import reduced_tv_shows from "./carousel-data";
+import Swiper from "react-id-swiper";
+
+export default class Carousel extends Component {
+  render() {
+    console.log(Math.floor(reduced_tv_shows.length / 2));
+    const params = {
+      activeSlideKey: `${Math.floor(reduced_tv_shows.length / 2)}`,
+      effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -17,19 +19,18 @@ import React, { Component } from 'react';
         slideShadows: true
       },
       pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+        el: ".swiper-pagination",
+        clickable: true
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
       },
       breakpoints: {
         1024: {
           slidesPerView: 3,
           spaceBetween: 40,
-        768: {
-        },
+          768: {},
           slidesPerView: 3,
           spaceBetween: 30
         },
@@ -44,18 +45,26 @@ import React, { Component } from 'react';
       }
     };
 
-        return (
-          <Swiper {...params}>
-            <div key='0' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/43467.com" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}> </div>
-            <div  key='1' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/35624.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}> </div>
-            <div  key='2' style={{height:"300px", width:"250px",backgroundImage: "url(" +  "https://static.episodate.com/images/tv-show/thumbnail/23455.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}> </div>
-            <div  key='3' style={{height:"300px", width:"250px",backgroundImage: "url(" +  "https://static.episodate.com/images/tv-show/thumbnail/29560.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}> </div>
-            <div  key='4' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/43234.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}> </div>
-            <div  key='4' style={{height:"300px", width:"250px",backgroundImage: "url(" + "https://static.episodate.com/images/tv-show/thumbnail/46778.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}> </div>
-            <div  key='4' style={{height:"300px", width:"250px",backgroundImage: "url(" +  "https://static.episodate.com/images/tv-show/thumbnail/8362.jpg" + ")",  backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}> </div>
-            
-
-          </Swiper>
-        )
-      }
-    }
+    return (
+      <Swiper {...params}>
+        {reduced_tv_shows.map((tv_show, index) => {
+          return (
+            <div
+              key={index}
+              style={{
+                height: "300px",
+                width: "250px",
+                backgroundImage: "url(" + tv_show.image_thumbnail_path + ")",
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat"
+              }}
+            >
+              {" "}
+            </div>
+          );
+        })}
+      </Swiper>
+    );
+  }
+}
