@@ -116,10 +116,14 @@ p {
   display: inline-block;
   white-space: nowrap;
   text-overflow: ellipsis;
+    border-bottom-right-radius: 10px ;
+  border-bottom-left-radius: 10px ;
 }
 .dd-list-item.selected {
   color: #fff;
   background-color: #26a69a;
+  border-bottom-right-radius: 15px ;
+  border-bottom-left-radius: 15px ;
 }
 .dd-list-item:hover {
   color: #fff;
