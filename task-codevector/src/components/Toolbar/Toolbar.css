@@ -8,7 +8,7 @@
   border-width: 3px;
   border-style: solid;
   border-bottom-color: #d50000; 
-    
+  z-index: 500;
 }
 
 .toolbar__navigation {

@@ -47,11 +47,16 @@ class App extends Component {
           <div className="gradient-wrapper">
             <div className="show-container">
               <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/46692.jpg" para="lorem ipsum" />
+              <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/46692.jpg" para="lorem ipsum" />
               <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/24010.jpg" para="lorem ipsum" />
+              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/47145." para="lorem ipsum" />
+              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/47145." para="lorem ipsum" />
               <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/47145." para="lorem ipsum" />
               <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/46778.jpg" para="lorem ipsum" />
               <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/8362.jpg" para="lorem ipsum" />
+              <Card title="GOT" img_url= "https://static.episodate.com/images/tv-show/thumbnail/8362.jpg" para="lorem ipsum" />
               <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/22410.jpg" para="lorem ipsum" />
+              <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/31452.jpg" para="lorem ipsum" />
               <Card title="GOT" img_url="https://static.episodate.com/images/tv-show/thumbnail/31452.jpg" para="lorem ipsum" />
             </div>
           </div>
