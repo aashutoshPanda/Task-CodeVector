@@ -4,12 +4,14 @@ import Swiper from "react-id-swiper";
 
 export default class Carousel extends Component {
   render() {
-    console.log(Math.floor(reduced_tv_shows.length / 2));
     const params = {
       activeSlideKey: `${Math.floor(reduced_tv_shows.length / 2)}`,
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
+      autoplay: {
+        delay: 500,
+      },
       slidesPerView: "auto",
       coverflowEffect: {
         rotate: 50,
