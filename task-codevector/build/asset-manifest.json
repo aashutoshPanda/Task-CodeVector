@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Task-CodeVector/task-codevector/static/css/main.7e9fc312.chunk.css",
-    "main.js": "/Task-CodeVector/task-codevector/static/js/main.f851fc17.chunk.js",
-    "main.js.map": "/Task-CodeVector/task-codevector/static/js/main.f851fc17.chunk.js.map",
-    "runtime~main.js": "/Task-CodeVector/task-codevector/static/js/runtime~main.3f05cbd1.js",
-    "runtime~main.js.map": "/Task-CodeVector/task-codevector/static/js/runtime~main.3f05cbd1.js.map",
-    "static/css/2.0624914a.chunk.css": "/Task-CodeVector/task-codevector/static/css/2.0624914a.chunk.css",
-    "static/js/2.bcb042b6.chunk.js": "/Task-CodeVector/task-codevector/static/js/2.bcb042b6.chunk.js",
-    "static/js/2.bcb042b6.chunk.js.map": "/Task-CodeVector/task-codevector/static/js/2.bcb042b6.chunk.js.map",
-    "index.html": "/Task-CodeVector/task-codevector/index.html",
-    "precache-manifest.e0698c38027fa88ff2e90cd7fa4ed2fb.js": "/Task-CodeVector/task-codevector/precache-manifest.e0698c38027fa88ff2e90cd7fa4ed2fb.js",
-    "service-worker.js": "/Task-CodeVector/task-codevector/service-worker.js",
-    "static/css/2.0624914a.chunk.css.map": "/Task-CodeVector/task-codevector/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.7e9fc312.chunk.css.map": "/Task-CodeVector/task-codevector/static/css/main.7e9fc312.chunk.css.map",
-    "static/media/index.css": "/Task-CodeVector/task-codevector/static/media/bg-img.84ba8e1e.jpg"
+    "main.css": "/Task-CodeVector/task-codevector/build/static/css/main.9d302528.chunk.css",
+    "main.js": "/Task-CodeVector/task-codevector/build/static/js/main.5adad3d1.chunk.js",
+    "main.js.map": "/Task-CodeVector/task-codevector/build/static/js/main.5adad3d1.chunk.js.map",
+    "runtime~main.js": "/Task-CodeVector/task-codevector/build/static/js/runtime~main.ffec2298.js",
+    "runtime~main.js.map": "/Task-CodeVector/task-codevector/build/static/js/runtime~main.ffec2298.js.map",
+    "static/css/2.0624914a.chunk.css": "/Task-CodeVector/task-codevector/build/static/css/2.0624914a.chunk.css",
+    "static/js/2.bcb042b6.chunk.js": "/Task-CodeVector/task-codevector/build/static/js/2.bcb042b6.chunk.js",
+    "static/js/2.bcb042b6.chunk.js.map": "/Task-CodeVector/task-codevector/build/static/js/2.bcb042b6.chunk.js.map",
+    "index.html": "/Task-CodeVector/task-codevector/build/index.html",
+    "precache-manifest.b9f49ca718e707cfbfb3e0e36b2d0bfd.js": "/Task-CodeVector/task-codevector/build/precache-manifest.b9f49ca718e707cfbfb3e0e36b2d0bfd.js",
+    "service-worker.js": "/Task-CodeVector/task-codevector/build/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/Task-CodeVector/task-codevector/build/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.9d302528.chunk.css.map": "/Task-CodeVector/task-codevector/build/static/css/main.9d302528.chunk.css.map",
+    "static/media/index.css": "/Task-CodeVector/task-codevector/build/static/media/bg-img.84ba8e1e.jpg"
   }
 }
