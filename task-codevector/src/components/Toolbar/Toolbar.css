@@ -43,6 +43,7 @@
   outline: none;
   padding: 3px 0px 3px 3px;
   margin-left : 35px;
+  margin-right : 10px;
   border: 1px solid #DDDDDD;
   border-radius: 30px;
   width: 300px;
@@ -112,6 +113,14 @@
     .search-input,.search-input:focus{
       margin-left: 20px;
       width: 150px;
+}
+
+  .toolbar__logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 550;
 }
 }
 
