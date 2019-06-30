@@ -1,87 +1,54 @@
-body{
-	background:  radial-gradient(#e5e5e5,#fff,#e5e5e5);
+body {
+	background: radial-gradient(#e5e5e5, #fff, #e5e5e5);
 }
 
-.card{
+.card {
 	width: 20rem;
 	margin: 10px;
-	 max-height: 200px !important;
-
+	max-height: 200px !important;
 }
 
-.card:hover{
-	box-shadow:20px 10px 20px 5px rgba(0,0,0,0.253)!important;
+.card:hover {
+	box-shadow: 20px 10px 20px 5px rgba(0, 0, 0, 0.253)!important;
 }
 
-
-
-.card-text{
+.card-text {
 	font-size: 0.9rem;
-	
 }
 
-.container-fluid .row{
+.container-fluid .row {
 	padding-top: 6rem;
 }
 
-
-
-.card-img-top{
+.card-img-top {
 	transform: scale(0.7);
-	transition: all 0.5s  ;
+	transition: all 0.5s;
 	margin-bottom: -25%;
 	margin-top: -12%;
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
 	transform: scale(1);
-	
 }
 
-.overflow{
+.overflow {
 	overflow: hidden;
 }
 
-
-
-
 @media only screen and (max-width: 768px) {
-	.card{
-	width: 10rem;
-	margin-bottom: 10px;
-	margin-right: 0px;
-    margin-left: 0px;
-	position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-
+	.card {
+		width: 10rem;
+		margin-bottom: 10px;
+		margin-right: 0px;
+		margin-left: 0px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		word-wrap: break-word;
+		background-color: #fff;
+		background-clip: border-box;
+		border: 1px solid rgba(0, 0, 0, .125);
+		border-radius: .25rem;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
