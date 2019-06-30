@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Task-CodeVector/task-codevector/build/static/css/main.9d302528.chunk.css",
+    "main.css": "/Task-CodeVector/task-codevector/build/static/css/main.c268efb2.chunk.css",
     "main.js": "/Task-CodeVector/task-codevector/build/static/js/main.5adad3d1.chunk.js",
     "main.js.map": "/Task-CodeVector/task-codevector/build/static/js/main.5adad3d1.chunk.js.map",
     "runtime~main.js": "/Task-CodeVector/task-codevector/build/static/js/runtime~main.ffec2298.js",
@@ -9,10 +9,10 @@
     "static/js/2.bcb042b6.chunk.js": "/Task-CodeVector/task-codevector/build/static/js/2.bcb042b6.chunk.js",
     "static/js/2.bcb042b6.chunk.js.map": "/Task-CodeVector/task-codevector/build/static/js/2.bcb042b6.chunk.js.map",
     "index.html": "/Task-CodeVector/task-codevector/build/index.html",
-    "precache-manifest.b9f49ca718e707cfbfb3e0e36b2d0bfd.js": "/Task-CodeVector/task-codevector/build/precache-manifest.b9f49ca718e707cfbfb3e0e36b2d0bfd.js",
+    "precache-manifest.472f94239c5164ee30afca96cb7a1152.js": "/Task-CodeVector/task-codevector/build/precache-manifest.472f94239c5164ee30afca96cb7a1152.js",
     "service-worker.js": "/Task-CodeVector/task-codevector/build/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/Task-CodeVector/task-codevector/build/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.9d302528.chunk.css.map": "/Task-CodeVector/task-codevector/build/static/css/main.9d302528.chunk.css.map",
+    "static/css/main.c268efb2.chunk.css.map": "/Task-CodeVector/task-codevector/build/static/css/main.c268efb2.chunk.css.map",
     "static/media/index.css": "/Task-CodeVector/task-codevector/build/static/media/bg-img.84ba8e1e.jpg"
   }
 }
