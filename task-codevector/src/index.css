@@ -73,11 +73,15 @@ body {
   min-height: 700px;
   
 }
-.card{
-  max-height: 300px !important;
-}
+
 
 @media screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
   .top-shows-heading {
       display: flex;
       justify-content: center;
@@ -93,6 +97,7 @@ body {
   }
   .show-container{
     background-color: white;
+    padding: 0px;
     border-radius: 30px;
     padding: 20px 30px;
     margin:auto; 
