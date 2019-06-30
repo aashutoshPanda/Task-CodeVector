@@ -75,9 +75,7 @@ body {
 }
 
 
-@media screen and (max-width: 480px) {
 
-}
 
 @media only screen and (max-width: 768px) {
 
@@ -91,7 +89,7 @@ body {
     width: 80%;
     padding: 5px;
     margin:auto; 
-    background: linear-gradient(to right, #004d40, #80cbc4);
+    background: linear-gradient(to right, black, #d50000);
     border-radius: 30px;
     
   }
@@ -106,4 +104,27 @@ body {
     flex-wrap: wrap;   /* elements wil be arranged in rows and columns just put proper margin between them*/
     
   }
+
+  .top-shows-heading h2 {
+
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
+  color: white;
+  z-index: 100;
+  transition: all 0.4s;
+
+}
+.top-shows-heading h2:hover {
+  margin-top: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 40px;
+  color: #CD0000;
+  text-shadow: 2px 2px black;
+  
+
+}
+.swiper-slide{
+  max-height: 200px;
+}
+
 }

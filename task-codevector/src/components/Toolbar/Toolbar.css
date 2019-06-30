@@ -109,6 +109,10 @@
   .dd-wrapper {
     display: none;
   }
+    .search-input,.search-input:focus{
+      margin-left: 20px;
+      width: 150px;
+}
 }
 
 @media (min-width: 769px) {
@@ -119,4 +123,6 @@
   .toolbar__logo {
     margin-left: 0;
   }
+
+
 }
