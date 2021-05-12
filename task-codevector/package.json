@@ -14,7 +14,7 @@
     "react-id-swiper": "^2.3.1",
     "react-scripts": "3.0.1",
     "reactjs-dropdown-component": "^1.0.6",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "typescript": "^3.5.2",
     "yarn": "^1.16.0"
   },
